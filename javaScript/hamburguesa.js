@@ -1,20 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links a');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
 
-    if (!toggle || !nav) return;
+    if (!menuToggle || !navLinks) return;
 
     // Abrir / cerrar menú (touch + mouse)
-    toggle.addEventListener('pointerdown', (e) => {
+    menuToggle.addEventListener('pointerdown', (e) => {
         e.preventDefault();
-        nav.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
     });
 
-    // Cerrar menú al tocar un link
-    links.forEach(link => {
-        link.addEventListener('pointerdown', () => {
-            nav.classList.remove('active');
+    // Cerrar menú al seleccionar un link
+    navItems.forEach(item => {
+        item.addEventListener('pointerdown', () => {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('open');
         });
     });
 });
