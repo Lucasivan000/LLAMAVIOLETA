@@ -217,7 +217,33 @@
     <footer class="footer">
         <p>© 2026 Llama Violeta – Todos los derechos reservados</p>
     </footer>
-    <script src="./javascript/hamburguesa.js"></script>
+    <script>
+        console.log("JS INLINE CARGADO");
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (!menuToggle || !navLinks) {
+                console.warn("No se encontraron elementos del menú");
+                return;
+            }
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                console.log("toggle menú");
+            });
+
+            navLinks.addEventListener('click', (e) => {
+                const link = e.target.closest('a');
+                if (!link) return;
+
+                navLinks.classList.remove('active');
+                console.log("link click", link.href);
+                // ⚠️ NO preventDefault → navega normal
+            });
+        });
+    </script>
 
 </body>
 
