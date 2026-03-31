@@ -5,12 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', () => {
+    // Abrir / cerrar menú (touch + mouse)
+    toggle.addEventListener('pointerdown', (e) => {
+        e.preventDefault();
         nav.classList.toggle('active');
     });
 
+    // Cerrar menú al tocar un link
     links.forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('pointerdown', () => {
             nav.classList.remove('active');
         });
     });
