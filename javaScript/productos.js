@@ -174,12 +174,12 @@ function getParametro(name) {
 }
 
 // 2️⃣ Obtener el ID y el producto correspondiente
-const id = getParametro('id');        // ej: "nube"
+const id = getParametro('id');        
 const producto = productos[id];
 const contenedor = document.getElementById('producto-detalle');
 
 if (producto) {
-    // 3️⃣ Crear HTML del slider + nombre + descripción + precio + botón
+    
     let sliderHTML = `
       <h2 class="producto-nombre">${producto.nombre}</h2>
 
