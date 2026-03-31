@@ -1,0 +1,104 @@
+/* Contenedor general del producto */
+#producto-detalle {
+  max-width: 500px;       /* ancho total del bloque de producto */
+  margin: 0 auto;         /* centrado horizontal */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título del producto */
+.producto-nombre {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Slider del producto */
+.producto-slider-container {
+  position: relative;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto 20px;  /* centrado con margen abajo */
+  text-align: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.producto-slider-images img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.producto-slider-images img.active {
+  display: block;
+}
+
+.producto-slider-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.producto-slider-container .prev { left: -10px; }
+.producto-slider-container .next { right: -10px; }
+
+/* Descripción */
+.producto-descripcion {
+  text-align: left;       /* alineado a la izquierda */
+  font-size: 1rem;
+  line-height: 1.6;       /* mejor lectura */
+  margin-bottom: 10px;
+}
+
+/* Precio */
+.producto-precio {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Botón de WhatsApp */
+.btn-comprar {
+  display: block;
+  margin: 0 auto;         /* centrado horizontal */
+  padding: 12px 25px;
+  background-color: #25D366; /* color WhatsApp verde */
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #128C4A;
+}
+
+//*
+/* Banner hero para el título de producto */
+.tituloProductos {
+  background: linear-gradient(90deg, #f9d5d3, #f6a5a5); /* degradé suave, se puede cambiar */
+  color: #fff; /* texto blanco para contraste */
+  text-align: center;
+  font-size: 2rem; /* tamaño visible */
+  font-weight: 700;
+  padding: 40px 20px; /* altura del banner */
+  margin: 0 0 30px 0; /* espacio abajo del banner */
+  border-radius: 12px; /* opcional, bordes suaves */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra ligera */
+  line-height: 1.3; /* para que el texto respire */
+}

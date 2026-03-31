@@ -6,7 +6,9 @@ const productos = {
 Medidas aproximadas: 21 cm x 36 cm.<br><br>
 Cada cartera tiene detalles únicos que la hacen irrepetible.`,
     precio: "$75.000",
-    imagen: "assets/Carteras/nube.png"
+    imagenes: [
+        "assets/Carteras/nube.png"
+    ] 
   },
   cielo: {
     id: "cielo",
@@ -15,7 +17,9 @@ Cada cartera tiene detalles únicos que la hacen irrepetible.`,
 Medidas aproximadas: 22 cm x 50 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$75.000",
-    imagen: "assets/Carteras/cielo.png"
+    imagenes: [
+        "assets/Carteras/cielo.png"
+    ]
   },
   tierra: {
     id: "tierra",
@@ -24,7 +28,10 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 28 cm x 38 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$90.000",
-    imagen: "assets/Carteras/tierra.png"
+    imagenes:[
+
+        "assets/Carteras/tierra.png"
+    ] 
   },
   amor: {
     id: "amor",
@@ -34,7 +41,9 @@ Medidas aproximadas: 26 cm x 38 cm.<br><br>
 Manija desmontable: 118 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$90.000",
-    imagen: "assets/Carteras/amor.png"
+    imagenes: [
+        "assets/Carteras/amor.png"
+    ] 
   },
   nudo: {
     id: "nudo",
@@ -43,7 +52,9 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 27 cm x 27 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$50.000",
-    imagen: "assets/Carteras/NUDO.png"
+    imagenes: [
+        "assets/Carteras/NUDO.png"
+    ] 
   },
   portacelulares: {
     id: "portacelulares",
@@ -57,7 +68,11 @@ CAMEL: 10 cm x 17 cm de cuerpo. Largo de correa: 114 cm.<br><br>
 Las medidas de las correas están tomadas en su totalidad.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$30.000",
-    imagen: "assets/Carteras/portacelular1.png"
+    imagenes: [
+        "assets/Carteras/portacelular1.png",
+        "assets/Carteras/portacelular2.png",
+        "assets/Carteras/portacelular3.png"
+    ] 
   },
   josefa: {
     id: "josefa",
@@ -66,7 +81,9 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 24 cm x 44 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$90.000",
-    imagen: "assets/Carteras/josefa.png"
+    imagenes:[
+        "assets/Carteras/josefa.png"
+    ] 
   },
   herminia: {
     id: "herminia",
@@ -75,7 +92,12 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 24 cm x 25 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$90.000",
-    imagen: "assets/Carteras/herminia1.png"
+    imagenes:[
+        "assets/Carteras/herminia1.png",
+        "assets/Carteras/herminia2.png",
+        "assets/Carteras/herminia3.png",
+        "assets/Carteras/herminia4.png"
+    ] 
   },
   flora: {
     id: "flora",
@@ -84,7 +106,10 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 17 cm x 19 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$60.000",
-    imagen: "assets/Carteras/flora1.png"
+    imagenes:[
+        "assets/Carteras/flora1.png",
+        "assets/Carteras/flora2.png"
+    ] 
   },
   ana: {
     id: "ana",
@@ -93,7 +118,9 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 23 cm x 20 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$85.000",
-    imagen: "assets/Carteras/ana.png"
+    imagenes:[
+        "assets/Carteras/ana.png"
+    ] 
   },
   azulino: {
     id: "azulino",
@@ -102,7 +129,9 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 24 cm x 26 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$45.000",
-    imagen: "assets/Carteras/azulino.png"
+    imagenes:[
+        "assets/Carteras/azulino.png"
+    ] 
   },
   agus: {
     id: "agus",
@@ -111,7 +140,11 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 25 cm x 19 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$90.000",
-    imagen: "assets/Carteras/agus1.png"
+    imagenes:[
+        "assets/Carteras/agus1.png",
+        "assets/Carteras/agus2.png",
+        "assets/Carteras/agus3.png"
+    ] 
   },
   ali: {
     id: "ali",
@@ -120,31 +153,71 @@ Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
 Medidas aproximadas: 25 cm x 26 cm.<br><br>
 Cada cartera tiene detalles diferentes que la hacen única e irrepetible.`,
     precio: "$75.000",
-    imagen: "assets/Carteras/ali1.png"
+    imagenes:[
+        "assets/Carteras/ali1.png",
+        "assets/Carteras/ali2.png",
+        "assets/Carteras/ali3.png"
+    ] 
   }
 };
 
-// 2️⃣ Función para obtener el parámetro de la URL
+// 1️⃣ Función para obtener el parámetro de la URL
 function getParametro(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
 }
 
-// 3️⃣ Obtener el ID y el producto correspondiente
+// 1️⃣ Función para obtener el parámetro de la URL
+function getParametro(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name)?.toLowerCase(); // Convierte a minúsculas para evitar problemas
+}
+
+// 2️⃣ Obtener el ID y el producto correspondiente
 const id = getParametro('id');        // ej: "nube"
 const producto = productos[id];
 const contenedor = document.getElementById('producto-detalle');
 
-// 4️⃣ Mostrar el producto en el HTML
 if (producto) {
-    contenedor.innerHTML = `
-    <h2>${producto.nombre}</h2>
-    <img src="${producto.imagen}" alt="${producto.nombre}" style="max-width:300px;">
-    <p>${producto.descripcion}</p>
-    <p><strong>Precio: ${producto.precio}</strong></p>
-    <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20comprar%20${encodeURIComponent(producto.nombre)}" 
-       target="_blank" class="btn-comprar">Comprar por WhatsApp</a>
-  `;
+    // 3️⃣ Crear HTML del slider + nombre + descripción + precio + botón
+    let sliderHTML = `
+      <h2 class="producto-nombre">${producto.nombre}</h2>
+
+      <div class="producto-slider-container">
+        <button class="prev">&#10094;</button>
+        <div class="producto-slider-images">
+          ${producto.imagenes.map((img, index) => `
+            <img src="${img}" alt="${producto.nombre}" class="${index === 0 ? 'active' : ''}">
+          `).join('')}
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <p class="producto-descripcion">${producto.descripcion}</p>
+      <p class="producto-precio"><strong>Precio: ${producto.precio}</strong></p>
+      <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20comprar%20${encodeURIComponent(producto.nombre)}" 
+         target="_blank" class="btn-comprar">Comprar por WhatsApp</a>
+    `;
+    contenedor.innerHTML = sliderHTML;
+
+    // 4️⃣ Lógica del slider
+    const images = contenedor.querySelectorAll('.producto-slider-images img');
+    let current = 0;
+
+    function showSlide(index) {
+        images.forEach((img, i) => img.classList.toggle('active', i === index));
+    }
+
+    contenedor.querySelector('.prev').addEventListener('click', () => {
+        current = (current - 1 + images.length) % images.length;
+        showSlide(current);
+    });
+
+    contenedor.querySelector('.next').addEventListener('click', () => {
+        current = (current + 1) % images.length;
+        showSlide(current);
+    });
+
 } else {
     contenedor.innerHTML = "<p>Producto no encontrado.</p>";
 }
