@@ -19,14 +19,7 @@ body {
     color: var(--texto);
 }
 
-/* NAVBAR */
-.navbar {
-    background: #7a3db8;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    /* subir fuerte */
-}
+
 
 .nav-container {
     max-width: 1200px;
@@ -112,10 +105,10 @@ nav a:hover {
 
 .navbar {
     background: #7a3db8;
-    border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 2000;
+    /* alto y definitivo */
 }
 
 .nav-container {
@@ -199,22 +192,17 @@ nav a:hover {
 
 @media (max-width: 768px) {
 
-    /* BOTÓN HAMBURGUESA */
     .menu-toggle {
         display: block;
-        /* 🔴 OBLIGATORIO */
         background: none;
         border: none;
         cursor: pointer;
-        z-index: 1100;
-        /* por encima del menú */
+        z-index: 2100;
     }
 
-    /* CONTENEDOR LINKS */
     .nav-links {
         position: fixed;
         top: 64px;
-        /* altura del navbar */
         left: 0;
         width: 100%;
         background: #a36dd8;
@@ -223,19 +211,13 @@ nav a:hover {
         align-items: center;
         gap: 1rem;
         padding: 1.5rem 0;
-        z-index: 1050;
-
-        pointer-events: none;
-        /* 🔴 CLAVE EN MOBILE */
+        z-index: 2050;
     }
 
-    /* MENÚ ABIERTO */
     .nav-links.active {
         display: flex;
-        pointer-events: auto;
     }
 
-    /* LINKS COMO BOTONES */
     .nav-links a {
         width: 90%;
         max-width: 320px;
@@ -244,7 +226,6 @@ nav a:hover {
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.25);
         color: #ffffff;
-        font-size: 1rem;
         font-weight: 600;
         text-decoration: none;
     }
@@ -620,4 +601,3 @@ nav a:hover {
     padding: 1.2rem;
     font-size: .85rem;
 }
-
