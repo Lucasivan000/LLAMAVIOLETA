@@ -621,9 +621,3 @@ nav a:hover {
     font-size: .85rem;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-}
