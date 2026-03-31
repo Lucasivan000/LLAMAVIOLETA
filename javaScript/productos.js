@@ -195,8 +195,8 @@ if (producto) {
 
       <p class="producto-descripcion">${producto.descripcion}</p>
       <p class="producto-precio"><strong>Precio: ${producto.precio}</strong></p>
-      <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20comprar%20${encodeURIComponent(producto.nombre)}" 
-         target="_blank" class="btn-comprar">Comprar por WhatsApp</a>
+      <a href="https://wa.me/5491150413838?text=Hola,%20quiero%20comprar%20${encodeURIComponent(producto.nombre)}" 
+         target="_blank" class="btn-comprar">Consultar por WhatsApp</a>
     `;
     contenedor.innerHTML = sliderHTML;
 
