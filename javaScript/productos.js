@@ -230,8 +230,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav-links');
     const links = document.querySelectorAll('.nav-links a');
 
-    toggle.addEventListener('click', () => {
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         nav.classList.toggle('active');
+    });
+
+    nav.addEventListener('click', (e) => {
+        e.stopPropagation();
     });
 
     links.forEach(link => {
@@ -240,9 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-            nav.classList.remove('active');
-        }
+    document.addEventListener('click', () => {
+        nav.classList.remove('active');
     });
 });
