@@ -24,7 +24,8 @@ body {
     background: #7a3db8;
     position: sticky;
     top: 0;
-    z-index: 1000; /* subir fuerte */
+    z-index: 1000;
+    /* subir fuerte */
 }
 
 .nav-container {
@@ -158,6 +159,7 @@ nav a:hover {
 .nav-links {
     display: flex;
     gap: 1rem;
+
 }
 
 .nav-links a {
@@ -167,6 +169,7 @@ nav a:hover {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
 }
+
 
 /* =========================
    HAMBURGUESA
@@ -196,28 +199,43 @@ nav a:hover {
 
 @media (max-width: 768px) {
 
+    /* BOTÓN HAMBURGUESA */
     .menu-toggle {
         display: block;
+        /* 🔴 OBLIGATORIO */
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+        /* por encima del menú */
     }
 
+    /* CONTENEDOR LINKS */
     .nav-links {
-        position: fixed;              /* 🔴 CLAVE */
-        top: 64px;                    /* altura navbar */
+        position: fixed;
+        top: 64px;
+        /* altura del navbar */
         left: 0;
         width: 100%;
         background: #a36dd8;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         padding: 1.5rem 0;
-        display: none;
-        z-index: 1050;                /* 🔴 por encima del hero */
+        z-index: 1050;
+
+        pointer-events: none;
+        /* 🔴 CLAVE EN MOBILE */
     }
 
+    /* MENÚ ABIERTO */
     .nav-links.active {
         display: flex;
+        pointer-events: auto;
     }
 
+    /* LINKS COMO BOTONES */
     .nav-links a {
         width: 90%;
         max-width: 320px;
@@ -231,6 +249,7 @@ nav a:hover {
         text-decoration: none;
     }
 }
+
 /* =========================
    HERO BANNER
 ========================= */
