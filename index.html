@@ -15,7 +15,7 @@
     <header class="navbar">
         <div class="nav-container">
             <div class="brand">
-                <img src="./assets/logo.jpeg" alt="Llama Violeta Logo">
+                <img src="./assets/logo.png" alt="Llama Violeta Logo">
                 <span>Llama Violeta</span>
             </div>
 
@@ -34,13 +34,14 @@
 
     <!-- HERO / BANNER -->
     <section class="hero" id="inicio">
-        <div class="hero-image">
-            <img src="./assets/portadabanner.png" alt="Cartera artesanal de macramé Llama Violeta">
-        </div>
+        <div class="hero-image"></div>
 
         <div class="hero-content">
-            <h1>Carteras que hablan por vos</h1>
-            <p>Diseño, estilo y personalidad en cada detalle</p>
+            <h1>Hecho a mano, con amor y detalle</h1>
+            <p>Descubrí la colección de carteras y accesorios en macramé</p>
+            <a href="https://wa.me/5491157829665" class="hero-cta" target="_blank" rel="noopener">
+                Consultar por WhatsApp
+            </a>
         </div>
     </section>
 
@@ -208,9 +209,9 @@
         <h2>Contacto</h2>
 
         <div class="contact-box">
-            <p>📲 WhatsApp: <a href="https://wa.me/5491150413838">+54 9 XXXXXXXX</a></p>
+            <p>📲 WhatsApp: <a href="https://wa.me/5491150413838">+54 9 1157829665</a></p>
             <p>📸 Instagram: <a href="#">@llamavioleta</a></p>
-            <p>✉️ Email: <a href="mailto:ventas@llamavioleta.com">ventas@llamavioleta.com</a></p>
+            <p>✉️ Email: <a href="mailto:ventas@llamavioleta.com">contacto@llamavioleta.com</a></p>
         </div>
     </section>
 
@@ -243,6 +244,17 @@
                 // ⚠️ NO preventDefault → navega normal
             });
         });
+    </script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card').forEach(card => observer.observe(card));
     </script>
 
 </body>
