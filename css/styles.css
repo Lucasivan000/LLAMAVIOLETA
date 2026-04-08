@@ -440,14 +440,7 @@ nav a:hover {
     grid-auto-rows: 1fr;
 }
 
-/* Alternar alturas de cards para “mosaico” */
-.cards-grid .card:nth-child(odd) img {
-    height: 280px;
-}
 
-.cards-grid .card:nth-child(even) img {
-    height: 220px;
-}
 
 /* =========================
    CARD CONTENEDOR
@@ -488,11 +481,11 @@ nav a:hover {
 .card img {
     width: 100%;
     height: 240px;
-    /* altura controlada */
     object-fit: contain;
-    /* recorte elegante */
     flex-shrink: 0;
-    /* evita que se encoja */
+    background-color: #f6f2ec;
+    padding: 10px;
+
 }
 
 /* =========================
@@ -795,6 +788,31 @@ nav a:hover {
 .contact-box a:hover {
     color: #9d6adf;
     text-decoration: underline;
+}
+
+/* =========================
+   ICONOS CONTACTO
+========================= */
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-box a:hover .contact-icon {
+    transform: scale(1.1);
+}
+
+/* Ajustes móviles */
+@media screen and (max-width: 768px) {
+    .contact-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
 }
 
 /* Responsivo */
